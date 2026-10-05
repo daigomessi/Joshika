@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joshika's first complete HTML project with a full code example.">
+  <title>First Project | My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">My First <span>HTML Page</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Basics</a></li>
+        <li><a href="css-styling.html">CSS Styling</a></li>
+        <li><a class="active" href="first-project.html" aria-current="page">First Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <h1 class="grad-text">Joshika's First Project</h1>
+      <p>Time to combine everything you learned: a small "About Me" page with a heading, text, a list, a link and some CSS.</p>
+    </div>
+
+    <section>
+      <h2>Step 1: Write the HTML</h2>
+      <p>Save this as <code>about.html</code>.</p>
+      <pre><code><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="str">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;meta</span> <span class="attr">charset</span>=<span class="str">"UTF-8"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;title&gt;</span>About Joshika<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"about.css"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>Hi, I'm Joshika!<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;p&gt;</span>I just built my first web page.<span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;h2&gt;</span>Things I like<span class="tag">&lt;/h2&gt;</span>
+  <span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Drawing<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Music<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Coding<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;/ul&gt;</span>
+  <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"https://www.wikipedia.org"</span><span class="tag">&gt;</span>Explore the web<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
+    </section>
+
+    <section>
+      <h2>Step 2: Add the CSS</h2>
+      <p>Save this as <code>about.css</code> in the same folder.</p>
+      <pre><code><span class="tag">body</span> {
+  <span class="attr">font-family</span>: <span class="str">Arial, sans-serif</span>;
+  <span class="attr">background</span>: <span class="str">linear-gradient(135deg, #0b1b4d, #2563eb)</span>;
+  <span class="attr">color</span>: <span class="str">white</span>;
+  <span class="attr">max-width</span>: <span class="str">600px</span>;
+  <span class="attr">margin</span>: <span class="str">3rem auto</span>;
+  <span class="attr">padding</span>: <span class="str">0 1rem</span>;
+}
+<span class="tag">a</span> { <span class="attr">color</span>: <span class="str">#38bdf8</span>; }</code></pre>
+    </section>
+
+    <section>
+      <h2>What you used</h2>
+      <div class="grid">
+        <div class="card"><div class="icon" aria-hidden="true">🏗️</div><h3>Page structure</h3><p><code>html</code>, <code>head</code>, <code>body</code> and <code>title</code>.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">📝</div><h3>Content</h3><p>Headings, a paragraph, a list and a link.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">🎨</div><h3>Style</h3><p>Fonts, colors and a gradient background.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Congratulations, Joshika!</h2>
+      <p>You now know how to build and style a web page. Next, try changing the colors, adding an image, or creating a second page and linking the two together.</p>
+      <a class="btn" href="index.html">Back to Home</a>
+    </section>
+
+    <nav class="pager" aria-label="Page navigation">
+      <a class="btn ghost" href="css-styling.html">Previous: CSS Styling</a>
+      <a class="btn" href="index.html">Back to Start</a>
+    </nav>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="basics.html">Basics</a></li>
+      <li><a href="css-styling.html">CSS Styling</a></li>
+      <li><a href="first-project.html">First Project</a></li>
+    </ul>
+    <p>Made with HTML5 and CSS3 for Joshika.</p>
+  </footer>
+</body>
+</html>

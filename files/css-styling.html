@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CSS basics: colors, fonts, backgrounds and styling examples.">
+  <title>CSS Styling | My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">My First <span>HTML Page</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Basics</a></li>
+        <li><a class="active" href="css-styling.html" aria-current="page">CSS Styling</a></li>
+        <li><a href="first-project.html">First Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <h1 class="grad-text">CSS Styling</h1>
+      <p>HTML builds the structure. CSS makes it look good. Here is how to start.</p>
+    </div>
+
+    <section>
+      <h2>CSS basics</h2>
+      <p>A CSS rule has a <strong>selector</strong> (what to style) and <strong>declarations</strong> (how to style it). Save your rules in a <code>.css</code> file and link it from your HTML.</p>
+      <pre><code><span class="com">/* selector { property: value; } */</span>
+<span class="tag">h1</span> {
+  <span class="attr">color</span>: <span class="str">royalblue</span>;
+  <span class="attr">text-align</span>: <span class="str">center</span>;
+}</code></pre>
+      <pre><code><span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"style.css"</span><span class="tag">&gt;</span></code></pre>
+    </section>
+
+    <section>
+      <h2>Colors</h2>
+      <p>Use color names, hex codes like <code>#3b82f6</code>, or <code>rgb()</code> values.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#1e3a8a">#1e3a8a</div>
+        <div class="swatch" style="background:#3b82f6">#3b82f6</div>
+        <div class="swatch" style="background:#38bdf8">#38bdf8</div>
+        <div class="swatch" style="background:#8b5cf6">#8b5cf6</div>
+      </div>
+      <pre><code><span class="tag">p</span> { <span class="attr">color</span>: <span class="str">#3b82f6</span>; }</code></pre>
+    </section>
+
+    <section>
+      <h2>Fonts</h2>
+      <p>Change the look of text with <code>font-family</code>, <code>font-size</code> and <code>font-weight</code>.</p>
+      <div class="demo">
+        <p style="font-family:Georgia,serif;font-size:1.4rem;font-weight:700">Georgia, large and bold</p>
+        <p style="font-family:Consolas,monospace;font-size:1.1rem">Monospace, medium</p>
+      </div>
+      <pre><code><span class="tag">h2</span> {
+  <span class="attr">font-family</span>: <span class="str">Georgia, serif</span>;
+  <span class="attr">font-size</span>: <span class="str">1.4rem</span>;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Backgrounds</h2>
+      <p>Set a solid color or a smooth gradient behind any element.</p>
+      <div class="demo" style="background:linear-gradient(135deg,#7c3aed,#38bdf8);border-style:solid;border-color:transparent">
+        <p style="font-weight:700;margin:0">This box uses a gradient background.</p>
+      </div>
+      <pre><code><span class="tag">.box</span> {
+  <span class="attr">background</span>: <span class="str">linear-gradient(135deg, #7c3aed, #38bdf8)</span>;
+  <span class="attr">padding</span>: <span class="str">1rem</span>;
+  <span class="attr">border-radius</span>: <span class="str">12px</span>;
+}</code></pre>
+    </section>
+
+    <nav class="pager" aria-label="Page navigation">
+      <a class="btn ghost" href="basics.html">Previous: Basics</a>
+      <a class="btn" href="first-project.html">Next: First Project</a>
+    </nav>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="basics.html">Basics</a></li>
+      <li><a href="css-styling.html">CSS Styling</a></li>
+      <li><a href="first-project.html">First Project</a></li>
+    </ul>
+    <p>Made with HTML5 and CSS3 for Joshika.</p>
+  </footer>
+</body>
+</html>

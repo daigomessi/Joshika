@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn HTML tags, headings, paragraphs, links and images.">
+  <title>HTML Basics | My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">My First <span>HTML Page</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="basics.html" aria-current="page">Basics</a></li>
+        <li><a href="css-styling.html">CSS Styling</a></li>
+        <li><a href="first-project.html">First Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <h1 class="grad-text">HTML Basics</h1>
+      <p>Everything on a web page is built from small pieces called tags. Learn the most important ones here.</p>
+    </div>
+
+    <section>
+      <h2>Tags and elements</h2>
+      <p>A tag is a keyword inside angle brackets. Most tags come in pairs: an opening tag and a closing tag with a slash. Together with the content between them, they form an <strong>element</strong>.</p>
+      <pre><code><span class="tag">&lt;p&gt;</span>I am a paragraph.<span class="tag">&lt;/p&gt;</span></code></pre>
+    </section>
+
+    <section>
+      <h2>Headings and paragraphs</h2>
+      <p>Headings run from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code>. Paragraphs use <code>&lt;p&gt;</code>.</p>
+      <pre><code><span class="tag">&lt;h1&gt;</span>Main title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>Section title<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;p&gt;</span>Some text goes here.<span class="tag">&lt;/p&gt;</span></code></pre>
+      <div class="demo">
+        <h3>Result</h3>
+        <p>Some text goes here.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <p>The anchor tag <code>&lt;a&gt;</code> creates a link. The <code>href</code> attribute says where it goes.</p>
+      <pre><code><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"https://www.wikipedia.org"</span><span class="tag">&gt;</span>Visit Wikipedia<span class="tag">&lt;/a&gt;</span></code></pre>
+      <div class="demo"><a href="https://www.wikipedia.org" target="_blank" rel="noopener">Visit Wikipedia</a></div>
+    </section>
+
+    <section>
+      <h2>Images</h2>
+      <p>The <code>&lt;img&gt;</code> tag shows a picture. It has no closing tag. Always add <code>alt</code> text that describes the image.</p>
+      <pre><code><span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"photo.jpg"</span> <span class="attr">alt</span>=<span class="str">"A sunset over the sea"</span><span class="tag">&gt;</span></code></pre>
+    </section>
+
+    <section>
+      <h2>Common tags at a glance</h2>
+      <div class="grid">
+        <div class="card"><h3><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code></h3><p>Make a bulleted list.</p></div>
+        <div class="card"><h3><code>&lt;strong&gt;</code></h3><p>Mark text as important (bold).</p></div>
+        <div class="card"><h3><code>&lt;div&gt;</code></h3><p>Group content into a block.</p></div>
+        <div class="card"><h3><code>&lt;br&gt;</code></h3><p>Start a new line.</p></div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="Page navigation">
+      <a class="btn ghost" href="index.html">Previous: Home</a>
+      <a class="btn" href="css-styling.html">Next: CSS Styling</a>
+    </nav>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="basics.html">Basics</a></li>
+      <li><a href="css-styling.html">CSS Styling</a></li>
+      <li><a href="first-project.html">First Project</a></li>
+    </ul>
+    <p>Made with HTML5 and CSS3 for Joshika.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A beginner-friendly introduction to HTML for Joshika.">
+  <title>Welcome, Joshika! | My First HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main">
+      <a class="logo" href="index.html">My First <span>HTML Page</span></a>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+        <li><a href="basics.html">Basics</a></li>
+        <li><a href="css-styling.html">CSS Styling</a></li>
+        <li><a href="first-project.html">First Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="orb" aria-hidden="true"></div>
+      <div>
+        <h1 class="grad-text">Welcome, Joshika!</h1>
+        <p class="sub">My First HTML Page</p>
+        <p>You are about to build real web pages. Follow four short lessons, try the examples, and finish with a complete project of your own.</p>
+        <a class="btn" href="basics.html">Start Learning</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What is HTML?</h2>
+      <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the language that gives every web page its structure: headings, paragraphs, links, images and more. Browsers read your HTML and turn it into the page you see.</p>
+      <pre><code><span class="tag">&lt;h1&gt;</span>Hello, world!<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is my first web page.<span class="tag">&lt;/p&gt;</span></code></pre>
+    </section>
+
+    <section>
+      <h2>Your learning path</h2>
+      <div class="grid">
+        <a class="card" href="basics.html">
+          <div class="icon" aria-hidden="true">🏷️</div>
+          <h3>HTML Basics</h3>
+          <p>Tags, headings, paragraphs, links and images.</p>
+        </a>
+        <a class="card" href="css-styling.html">
+          <div class="icon" aria-hidden="true">🎨</div>
+          <h3>CSS Styling</h3>
+          <p>Add colors, fonts and backgrounds to your pages.</p>
+        </a>
+        <a class="card" href="first-project.html">
+          <div class="icon" aria-hidden="true">🚀</div>
+          <h3>First Project</h3>
+          <p>Put it all together in a complete page.</p>
+        </a>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="Page navigation">
+      <span></span>
+      <a class="btn" href="basics.html">Next: HTML Basics</a>
+    </nav>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="basics.html">Basics</a></li>
+      <li><a href="css-styling.html">CSS Styling</a></li>
+      <li><a href="first-project.html">First Project</a></li>
+    </ul>
+    <p>Made with HTML5 and CSS3 for Joshika.</p>
+  </footer>
+</body>
+</html>
